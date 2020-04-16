@@ -1,0 +1,71 @@
+body{
+    font-family: DejaVu Sans Mono, monospace;
+      font-size: 18px;
+  }
+  .navBar{
+  overflow: hidden;
+  background-color: dodgerblue;
+  text-align: center;
+  }
+  
+  .navBar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navBar a:hover{
+    background-color: white;
+    color: dodgerblue;
+  }
+  .post-list{
+      display: grid;
+      grid-template-columns: repeat(3,minmax(100px,293px));
+      justify-content: center;
+      grid-gap: 28px;
+  }
+  .post{
+      cursor: pointer;
+      position: relative;
+      display: block;
+  }
+  .post-image{
+      margin: 0;
+  }
+  .post-image img{
+      width: 100%;
+      vertical-align: top;
+  }
+  .post-overlay{
+      background-color: rgba(39, 37, 37, 0.329);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+  }
+  .post:hover .post-overlay{
+      display: flex;
+  }
+  .post-likes,
+  .post-comments{
+      width: 80px;
+      margin: 5px;
+      font-weight: bold;
+      text-align: center;
+      display: inline-block;
+  }
+  @media screen and (max-width: 768px){
+      .post-list{
+          grid-gap: 3px;
+      }
+  }
+  

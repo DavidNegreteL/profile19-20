@@ -1,0 +1,123 @@
+body{
+    font-family: DejaVu Sans Mono, monospace;
+      font-size: 18px;
+  }
+  .container{
+      display: grid;
+      grid-template: 50px 1fr 50px/ repeat(7,1fr);
+      height: 100vh;
+      grid-template-areas: "navBar navBar navBar navBar navBar navBar navBar"
+                                               "left left content content content right right"
+                                               "footer footer footer footer footer footer footer"
+  }
+  .item{
+      padding: 10px;
+      color: rgb(82, 80, 80);
+  }
+  .navBar{
+      grid-area: navBar;
+      align-self: center;
+  }
+  .left{
+      grid-area: left;
+  }
+  .content{
+      grid-area: content;
+  }
+  .right{
+      grid-area: right;
+  }
+  .footer{
+      grid-area: footer;
+  }
+  .navBar{
+  overflow: hidden;
+  background-color: dodgerblue;
+  text-align: center;
+  }
+  
+  .navBar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navBar a:hover{
+    background-color: white;
+    color: dodgerblue;
+  }
+  
+  .avatar-div{
+  text-align: center;
+  }
+  
+  .avatar-img{
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  
+  
+  input[type=text], input[type=password]{
+      font-family: DejaVu Sans Mono, monospace;
+      font-size: 15px;
+    width: 90%;
+    padding: 25px;
+    margin: 15px 22px;
+    display:inline-block;
+    border: none;
+      border-radius: 2px;
+    background-color: rgb(236, 235, 235);
+  }
+  
+  input:focus{
+    background-color: lightgray;
+    outline: none;
+  }
+  
+  hr{
+    background-color: firebrick;
+      opacity: 0.8;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    padding: 2px;
+      width: 50%;
+  }
+  
+  button{
+    background-color: dodgerblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+  }
+  
+  button:hover{
+    opacity:1;
+  }
+  
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: firebrick;
+  }
+  
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  .footer{
+      background-color: dodgerblue;
+      font-size: 15px;
+      text-align: center;
+      color: white;
+  }

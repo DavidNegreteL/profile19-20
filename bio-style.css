@@ -1,0 +1,100 @@
+body{
+    font-family: DejaVu Sans Mono, monospace;
+      font-size: 18px;
+  }
+  .container{
+      margin: 0;
+      gap: 6px;
+      display: grid;
+      grid-template: 50px repeat(4,1fr) 50px/ 50px 1fr 50px;
+      height: 100vh;
+      grid-template-areas: "navBar navBar navBar"
+                                               "left content1 right"
+                                               "left content2 right"
+                                               "left content3 right"
+                                               "left content4 right"
+                                               "footer footer footer";
+  }
+  item{
+      
+  }
+  .navBar{
+      grid-area: navBar;
+  }
+  .left{
+      grid-area: left;
+  }
+  .content1{
+      grid-area: content1;
+      padding: 10px;
+  }
+  .content2{
+      grid-area: content2;
+      padding: 10px;
+      border: solid lightgray;
+      border-radius: 10px;
+  }
+  .content3{
+      grid-area: content3;
+      padding: 10px;
+      border: solid lightgray;
+      border-radius: 10px;
+  }
+  .content4{
+      grid-area: content4;
+      padding: 10px;
+      border: solid lightgray;
+      border-radius: 10px;
+  }
+  .right{
+      grid-area: right;
+  }
+  .txt{
+      grid-area: txt;
+  }
+  .footer{
+      grid-area: footer;
+  }
+  .navBar{
+  overflow: hidden;
+  background-color: dodgerblue;
+  text-align: center;
+  }
+  
+  .navBar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navBar a:hover{
+    background-color: white;
+    color: dodgerblue;
+  }
+  .avatar-div{
+  text-align: center;
+  color: rgb(104, 102, 102);
+  }
+  
+  .avatar-img{
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .bio-imgi{
+      float: left;
+      margin-right: 10px;
+    width: 100px;
+    height: 100px;
+  }
+  .bio-imgd{
+      float: right;
+      margin-left: 10px;
+    width: 100px;
+    height: 100px;
+  }
+  
